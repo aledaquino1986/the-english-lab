@@ -21,3 +21,39 @@ body {
   animation: fadeInFromLeft 3s ease-in-out 0.75s;
   animation-fill-mode: backwards;
 }
+
+.secondary-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.5rem;
+  background-image: linear-gradient(
+    to right,
+    $color-primary-light,
+    $color-primary-dark
+  );
+  display: inline-block;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: skewy(2deg) skewX(5deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+}
+
+.tertiary-heading {
+  font-size: $tertiary-heading;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $standard-font-size;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
