@@ -1,0 +1,23 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+}
+
+.heading__primary {
+  display: block;
+  font-size: 7rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.heading__secondary {
+  display: block;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  font-weight: 500;
+  animation: fadeInFromLeft 3s ease-in-out 0.75s;
+  animation-fill-mode: backwards;
+}
